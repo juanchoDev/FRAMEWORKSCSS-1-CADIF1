@@ -1,0 +1,64 @@
+body {
+    margin-top:1em !important;
+}
+
+header {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 30vh;
+}
+
+header div:first-child{
+    height: 60%;
+    width: 20%;
+}
+
+section{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+article {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* seccion1 */
+
+.section1 {
+    height: 12.5em;
+}
+
+.section1__div1 {
+    background-color: yellow;
+}
+.section1__div2 {
+    background-color: purple;
+}
+.section1__div3 {
+    background-color: pink;
+}
+.section1__div4 {
+    background-color: grey;
+}
+
+/* section2 */
+
+.section2 {
+    height: 30em;
+}
+
+.section2 article:first-of-type div {
+    height: 40%;
+}
+
+.section2 article:last-of-type div {
+    height: 90%;
+}
+
+/* Footer */ 
+
+footer {
+    height: 15em;
+}
