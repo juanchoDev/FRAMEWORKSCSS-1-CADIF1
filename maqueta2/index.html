@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio2 Framework CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <style>
+    h2 {
+      font-size: 2em;
+    }
+    * {
+      margin: 0 !important;
+    }
+    .card img:hover {
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+      transform: scale(1.05);
+    }
+    .card-header {
+      font-size: 2em;
+    }
+    .card-subtitle {
+      font-size: 1.5em;
+    }
+
+    .card-subtitle strong {
+      font-size: 1.25em;
+    }
+    .nav-link {
+      font-size: 1.25em;
+      font-weight: 700;
+      border-radius: 0.25em;
+    }
+    .nav-item > .text-white:hover {
+      background-color: grey;
+    }
+
+    ion-icon {
+      color: #007BFF;
+      font-size: 3em;
+    }
+    ion-icon:hover {
+      transition: ease .5s;
+      color: #fff;
+      background-color: #007BFF;
+      border-radius: 0.1em;
+      transform: scale(1.1);
+    }
+
+  </style>
+
+  <body class="d-flex justify-content-center">
+    <div class="container text-center" style="padding: 0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a
+          class="navbar-brand text-white font-weight-bold"
+          href="#"
+          style="height: 100%"
+          ><img
+            src="./images/LogotipoCorpoPlastTransparente.png"
+            alt=""
+            height="125"
+            style="filter: brightness(100)"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="padding: 0"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#"
+                >Inicio <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#"
+                >Servicios <span class="sr-only">(current)</span></a
+              >
+            </li>
+           
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Boutique</a></li>
+                  <li><a class="dropdown-item" href="#">Vivero</a></li>
+                  <li><a class="dropdown-item" href="#">Plástico Ferretero</a></li>
+                </ul>
+              </div>
+            
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#"
+                >Contacto<span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h2 class="my-4 text-uppercase d-none d-md-block d-lg-block" style="margin: 0;">Productos</h2>
+      <p class="mb-4 d-none d-md-block d-lg-block">
+        Galería de productos fabricados y distribuidos por nosotros. Por favor
+        contactenos para fabricación de empaques unicos o medidas especiales.
+      </p>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-5">
+            <div class="card-header">Boutique</div>
+            <img
+              class="card-img-top"
+              src="./images/productoBoutique.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-3 text-muted">
+                <strong class="text-dark">$25</strong>/ millar
+              </h6>
+              <p class="card-text">
+                Diferentes medidas<br />Personalizables<br />Fabricadas con
+                material virgen<br />Listo para fabricar
+              </p>
+              <a href="#" class="btn btn-outline-primary text-uppercase"
+                >Personalizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-5">
+            <div class="card-header">Vivero</div>
+            <img
+              class="card-img-top"
+              src="./images/productoVivero.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-3 text-muted">
+                <strong class="text-dark">$8</strong>/ millar
+              </h6>
+              <p class="card-text">
+                Diferentes medidas<br />Color negro o blanco<br />Fabricadas con
+                material reciclado<br />Listo para enviar
+              </p>
+              <a href="#" class="btn btn-outline-primary text-uppercase">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-5">
+            <div class="card-header">Plástico Ferretero</div>
+            <img
+              class="card-img-top"
+              src="./images/productoFerretero.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h6 class="card-subtitle mb-3 text-muted">
+                <strong class="text-dark">$65</strong>/ unidad
+              </h6>
+              <p class="card-text">
+                Medida única<br />100M Largo<br />3M Ancho<br />Listo para
+                enviar
+              </p>
+              <a href="#" class="btn btn-outline-primary text-uppercase">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="https://www.instagram.com/corpoplast/" target="_blank" class="nav-link px-2 text-muted"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.facebook.com/corpoplast1" target="_blank" class="nav-link px-2 text-muted"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted" 
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted"
+                ><ion-icon name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="text-center text-muted">
+            &copy; 2024, CORPO PLAST. Todos los derechos reservados.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
