@@ -1,0 +1,19 @@
+.logo {
+    width: 35%;
+}
+
+#botonSearch {
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+#barraSearch {
+    border-radius: 0 !important;
+}
+
+.botonAzul {
+    background-color: #54BDDC !important;
+}
+
+.botonRojo {
+    background-color: #CE433F !important;
+}
